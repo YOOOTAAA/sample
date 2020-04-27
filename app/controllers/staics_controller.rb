@@ -1,4 +1,5 @@
 class StaicsController < ApplicationController
+  
   def home
   end
 
@@ -7,4 +8,8 @@ class StaicsController < ApplicationController
 
   def about
   end
+  
+  def contact
+  end
+  
 end

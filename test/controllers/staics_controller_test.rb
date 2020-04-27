@@ -3,24 +3,28 @@ require 'test_helper'
 class StaicsControllerTest < ActionDispatch::IntegrationTest
   
     test "should get root" do
-    get staics_home_url
+    get root_path
     assert_response :success
-    assert_select "title", "Ruby on Rails Tutorial Sample App"
   end
 
   test "should get home" do
-    get staics_home_url
+    get home_path
     assert_response :success
   end
 
   test "should get help" do
-    get staics_help_url
+    get helf_path
     assert_response :success
   end
 
   test "should get about" do
-    get staics_about_url
+    get about_path
     assert_response :success
   end
 
+  test "should get contact" do
+    get contact_path
+    assert_response :success
+  end
+  
 end
